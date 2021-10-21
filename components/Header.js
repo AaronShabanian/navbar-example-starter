@@ -14,7 +14,7 @@ export default function Header(){
             </Link>
             <Link href="/about" className="link"><a>About</a></Link>
             <Link href="/products" className="link"><a>Products</a></Link>
-            </nav>
+            
             <div className="button-group">
                 <button className="search-button">
                     <svg xmlns="http://www.w3.org/2000/svg" className="search" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,11 +25,29 @@ export default function Header(){
                     Sign Up
                 </button>
             </div>
+            </nav>
             <style jsx>{`
               /* ADD YOUR STYLES HERE */
-              header {
+  
+                header {
                   color: #1d3557;
                   background-color: white;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-evenly;
+                }
+                nav{
+                    
+                }
+                .logo{
+                    width:50px
+                    display: flex;
+                    flex-direction: row;
+                }
+                .button-group{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
                 }
             `}</style>
         </header>

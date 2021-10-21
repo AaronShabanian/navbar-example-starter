@@ -4,11 +4,12 @@ import Header from '../components/Header'
 export default function Home() {
   return (
     <div className="page">
+      <div className="nav">
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      </div>
       <Header />
 
       <main>
@@ -23,6 +24,11 @@ export default function Home() {
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+        
+        .nav{
+          display: flex;
+          justify-content: space-around;
         }
       `}</style>
 

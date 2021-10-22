@@ -26,10 +26,6 @@ export default function Home() {
           align-items: center;
         }
         
-        .nav{
-          display: flex;
-          justify-content: space-around;
-        }
       `}</style>
 
     </div>

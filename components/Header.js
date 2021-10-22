@@ -4,6 +4,7 @@ export default function Header(){
     return (
         <header>
             <nav>
+            
             <Link href="/">
                 <div className="logo">
                 <svg className="lightbulb" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -14,7 +15,7 @@ export default function Header(){
             </Link>
             <Link href="/about" className="link"><a>About</a></Link>
             <Link href="/products" className="link"><a>Products</a></Link>
-            
+            </nav>
             <div className="button-group">
                 <button className="search-button">
                     <svg xmlns="http://www.w3.org/2000/svg" className="search" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,7 +26,6 @@ export default function Header(){
                     Sign Up
                 </button>
             </div>
-            </nav>
             <style jsx>{`
               /* ADD YOUR STYLES HERE */
   
@@ -34,20 +34,52 @@ export default function Header(){
                   background-color: white;
                   display: flex;
                   flex-direction: row;
-                  justify-content: space-evenly;
+                  justify-content: space-between;
+                  align-items:center;
                 }
                 nav{
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items:center;
+                    column-gap: 20px;
                     
                 }
-                .logo{
-                    width:50px
-                    display: flex;
+                
+                .links{
+                    display:flex;
                     flex-direction: row;
+                    justify-content: space-between;
+                    column-gap: 20px;
+            
+                }
+                .logo{
+                    display:flex;
+                    flex-direction:row;
+                    justify-content:space-between;
+                }
+                .lightbulb{
+                    width:2rem;
                 }
                 .button-group{
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
+                    justify-content: space-around;
+                    column-gap: 5px;
+                }
+                button{
+                    background:#ffffff;
+                    color: #1d3557
+                }
+                .search-button{
+                    width:2rem;
+                    border:none;
+                }
+                
+                .sign-up{
+                    padding:5px;
+                    border-width:1px;
+                    border-radius:10%;
                 }
             `}</style>
         </header>

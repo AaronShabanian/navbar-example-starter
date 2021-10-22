@@ -46,13 +46,7 @@ export default function Header(){
                     
                 }
                 
-                .links{
-                    display:flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    column-gap: 20px;
-            
-                }
+                
                 .logo{
                     display:flex;
                     flex-direction:row;
